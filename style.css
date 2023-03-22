@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    color: white;
+}
+
+body{
+    background-color: #3A4750;
+}
+
+div{
+    display: inline-block;
+}
+
+nav{
+    width: 10%;
+    background-color: #303841;
+    padding: 50px 20px;
+    height: 100%;
+    position: fixed;
+}
+
+#feedPane{
+    margin-left: 13%;
+    width: 60%;
+}
+
+#suggestionsPane{
+    width: 20%;
+    border-left: solid 1px #D9D9D9;
+}
+
+a{
+    text-decoration: none;
+}
+
+.activeMenuItem{
+    background-color: #3A4750;
+}
+
+.paddingTop{
+    padding-top: 30px;
+}
+
+.width-100{
+    width: 100%;
+}
+
+table, td{
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+hr{
+    color: #D9D9D9;
+}
+
+.circular{
+    border-radius: 50%;
+}
+
+.account-info table, .account-info tr{
+    display: inline;
+}
