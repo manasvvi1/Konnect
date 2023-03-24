@@ -7,61 +7,111 @@ body{
     background-color: #3A4750;
 }
 
-div{
-    display: inline-block;
-}
-
 nav{
-    width: 10%;
     background-color: #303841;
-    padding: 50px 20px;
-    height: 100%;
+    width: 15%;
+    align-items: center;
     position: fixed;
-}
-
-#feedPane{
-    margin-left: 13%;
-    width: 60%;
-}
-
-#suggestionsPane{
-    width: 20%;
-    border-left: solid 1px #D9D9D9;
+    height: 100%;
 }
 
 a{
     text-decoration: none;
 }
 
-.activeMenuItem{
-    background-color: #3A4750;
+#navigationMenu{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.paddingTop{
-    padding-top: 30px;
-}
-
-.width-100{
-    width: 100%;
-}
-
-table, td{
-    margin: 0;
-    width: 100%;
-    display: inline-block;
+#navigationMenu li{
     font-size: 22px;
+    list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
+/* #navigationMenu #activeMenuItem{
+    background-color: #3A4750;
+} */
+
 hr{
-    color: #D9D9D9;
+    width: 75%;
+    margin: auto;
+}
+
+#accountHeading{
+    padding: 5px 30px;
 }
 
 .circular{
     border-radius: 50%;
 }
 
-.account-info table, .account-info tr{
+td{
+    margin: auto;
+    padding: 10px 10px;
+}
+
+#accountDetails table{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#advertisement{
+    padding: 0px 35px;
+}
+
+#suggestionsPane{
+    width: 20%;
+    padding: 20px;
+    border-left: solid 1px #D9D9D9;
+    float: right;
+    display: inline-block;
+    align-items: center;
+}
+
+input{
+    background-color: inherit;
+    padding: 5px;
+    border: #D9D9D9 1px solid;
+    border-radius: 10px;
+}
+
+#suggestionsPane div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h3{
+    font-weight: normal;
+}
+
+.follow{
+    background-color: #303841;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 100px;
+}
+
+.following{
+    background-color: inherit;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #00ADB5;
+    width: 100px;
+}
+
+#companyHeader{
+    padding: 30px auto;
+}
+
+#companyHeader img{
+    border-radius: 50%;
+}
+
+#companyHeader h1{
     display: inline;
 }

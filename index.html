@@ -9,36 +9,88 @@
   </head>
   <body>
     <nav>
-        <div>
-            <img src="https://play-lh.googleusercontent.com/DTzWtkxfnKwFO3ruybY1SKjJQnLYeuK3KmQmwV5OQ3dULr5iXxeEtzBLceultrKTIUTr" width="75">
-            <h1>Konnect</h1>
-        </div>
-        <div class="paddingTop">
+        <div id="companyHeader">
             <table>
-                <td  class="activeMenuItem"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></td>
-                <td><a href="messages.html"><i class="fa-solid fa-message"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Messages</a></td>
-                <td><a href="profile.html"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</a></td>
-                <td><a href="settings.html"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a></td>
+                <tr>
+                    <td>
+                        <img src="/logo.jpg" width="100">
+                    </td>
+                    <td>
+                        <h1>Konnect</h1>
+                    </td>
+                </tr>
             </table>
         </div>
-        <hr>
-        <h2 style="padding-top: 5px; padding-bottom: 5px;">Account</h2>
-        <hr>
-        <div class="account-info paddingTop">
-            <img src="https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80" class="circular" width="40">
-            Manasvvi<br>
-            <p style="color: #D9D9D9">@manasvvi_1241</p></td>
+        <ul id="navigationMenu">
+            <li id="activeMenuItem">
+                <a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+            </li>
+            <li>
+                <a href="messages.html"><i class="fa-solid fa-message"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Messages</a>
+            </li>
+            <li>
+                <a href="profile.html"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</a>
+            </li>
+            <li>
+                <a href="settings.html"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a>
+            </li>
+        </ul>
+        <div id="accountDetails">
+            <hr>
+            <h3 id="accountHeading">Account</h3>
+            <hr>
+            <table>
+                <tr>
+                    <td><img src="https://media.licdn.com/dms/image/C5603AQGfDxrdzCcy6Q/profile-displayphoto-shrink_800_800/0/1631616989429?e=2147483647&v=beta&t=inbf0-2PxE1MSVxHznkpPCM74QD3FZ4p0J3JuMG4HqA" class="circular" width="40" height="40"></td>
+                    <td id="account-name"><p style="font-size: 17px; font-weight: bold;">Manasvvi</p>@manasvvi_1241</td>
+                </tr>
+            </table>
         </div>
-        <a href="https://www.swiggy.com/"><img src="https://newspaperads.ads2publish.com/wp-content/uploads/2017/10/swiggy-food-delivery-app-enjoy-flat-40-off-ad-pune-times-28-10-2017.jpg" width="150" class="paddingTop"></a>
+        <div>
+            <a href="https://www.swiggy.com/"><img src="https://newspaperads.ads2publish.com/wp-content/uploads/2017/10/swiggy-food-delivery-app-enjoy-flat-40-off-ad-pune-times-28-10-2017.jpg" width="150" id="advertisement"></a>
+        </div>
     </nav>
-    <div id="feedPane">
-        <h1>jnak</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magnam in reprehenderit eius nobis officiis at maxime ipsum dolores, totam neque numquam blanditiis consectetur veritatis sit sequi repellendus? Alias autem rerum odit facilis consequatur dicta esse. Libero ullam excepturi nisi consectetur atque ipsa eius, doloribus aliquid in natus aliquam dicta.
-    </div>
+    <main>
+
+    </main>
     <div id="suggestionsPane">
-        <h1>jnak</h1>
+        <div>
+            <form>
+                <input type="text" id="search" name="search" value="Search">
+                <button style="background-color: inherit; padding: 5px 0px; border: 0;"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div id="followSuggestions">
+            <h3>Suggestions for You</h3>
+            <table>
+                <tr>
+                    <td><img src="https://media.licdn.com/dms/image/C4D03AQG6qf5j8JKpwg/profile-displayphoto-shrink_800_800/0/1655637782246?e=2147483647&v=beta&t=Y-g3xAJut5lQaJWOIK6IYrDsJQ9ENOj4Y9BuK4-9qXg" class="circular" width="40" height="40"></td>
+                    <td id="account-name"><p style="font-size: 17px; font-weight: bold;">Simran</p>@simsim14</td>
+                    <td style="align-items: right;">
+                        <button class="following">Followed</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://media.licdn.com/dms/image/C4E03AQEdeNKJa7svBw/profile-displayphoto-shrink_800_800/0/1644484106760?e=2147483647&v=beta&t=y0Ws0W8oczFAXRqHjkiLF3mg05NXSF91SbFQ1IcjsV8" class="circular" width="40" height="40"></td>
+                    <td id="account-name"><p style="font-size: 17px; font-weight: bold;">Radhika</p>@radhika_singh</td>
+                    <td style="align-items: right;">
+                        <button class="follow">Follow</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80" class="circular" width="40" height="40"></td>
+                    <td id="account-name"><p style="font-size: 17px; font-weight: bold;">Mansi</p>@mansi745</td>
+                    <td style="align-items: right;">
+                        <button class="follow">Follow</button>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <a href="">See more</a>
+            </p>
+        </div>
     </div>
+
     <script src="https://kit.fontawesome.com/a30f4e00c2.js" crossorigin="anonymous"></script>
-	<script src="index.js"></script>
   </body>
 </html>
