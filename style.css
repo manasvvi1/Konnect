@@ -155,3 +155,9 @@ main{
     width: 50%;
     align-items: end;
 }
+
+
+.activeMenuItem{
+    background-color: #3A4750;
+    /* color: #00ADB5; */
+}
