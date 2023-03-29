@@ -51,6 +51,12 @@
             <a href="https://www.swiggy.com/"><img src="https://newspaperads.ads2publish.com/wp-content/uploads/2017/10/swiggy-food-delivery-app-enjoy-flat-40-off-ad-pune-times-28-10-2017.jpg" width="150" id="advertisement"></a>
         </div>
     </nav>
+    <audio id="likeAudio">
+        <source src="./audio/like.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="commentAudio">
+        <source src="./audio/comment.mp3" type="audio/mpeg">
+    </audio>
     <main>
         <div id="frames">
             <table>
@@ -93,7 +99,7 @@
                         <span style="font-size: 20px; padding-left: 5px;">Yuktika</span>
                         <span style="float: right;">
                             <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart1"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment1"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -103,8 +109,8 @@
                         <img src="https://media.istockphoto.com/id/1154642632/photo/close-up-portrait-of-brunette-woman.jpg?s=612x612&w=0&k=20&c=d8W_C2D-2rXlnkyl8EirpHGf-GpM62gBjpDoNryy98U=" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">Manya</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart2"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart2"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment2"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -114,8 +120,8 @@
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">Ayaan</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart3"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart3"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment3"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -127,8 +133,8 @@
                         <img src="https://media.licdn.com/dms/image/C4D03AQG6qf5j8JKpwg/profile-displayphoto-shrink_800_800/0/1655637782246?e=2147483647&v=beta&t=Y-g3xAJut5lQaJWOIK6IYrDsJQ9ENOj4Y9BuK4-9qXg" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">Simran</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart4"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart4"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment4"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -138,8 +144,8 @@
                         <img src="https://cdn4.sharechat.com/img_467575_1b65aca1_1667174465032_sc.jpg" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">Navya</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart5"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart5"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment5"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -149,8 +155,8 @@
                         <img src="https://sm.askmen.com/askmen_in/article/f/facebook-p/facebook-profile-picture-affects-chances-of-gettin_gstt.jpg" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">DigiArt by Rishi</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart6"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart6"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment6"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -162,8 +168,8 @@
                         <img src="https://media.licdn.com/dms/image/C4D03AQG6qf5j8JKpwg/profile-displayphoto-shrink_800_800/0/1655637782246?e=2147483647&v=beta&t=Y-g3xAJut5lQaJWOIK6IYrDsJQ9ENOj4Y9BuK4-9qXg" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">Simran</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart7"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart7"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment7"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -173,8 +179,8 @@
                         <img src="./images/2023-03-29_16-12-51.png" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">Yuktika</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart8"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart8"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment8"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>
@@ -184,8 +190,8 @@
                         <img src="https://media.licdn.com/dms/image/C4D03AQG6qf5j8JKpwg/profile-displayphoto-shrink_800_800/0/1655637782246?e=2147483647&v=beta&t=Y-g3xAJut5lQaJWOIK6IYrDsJQ9ENOj4Y9BuK4-9qXg" class="circular" style="display: inline;" width="20px" height="20px">
                         <span style="font-size: 20px; padding-left: 5px;">Simran</span>
                         <span style="float: right;">
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"  onclick="toggleLike(id)" id="heart9"><i class="fa-solid fa-heart"></i></button>
-                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;"><i class="fa-solid fa-comment"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleLike(id)" id="heart9"><i class="fa-solid fa-heart"></i></button>
+                            <button style="background-color: inherit; padding: 5px 5px; border: 0; font-size: 20px;" onclick="toggleComment(id)" id="comment9"><i class="fa-solid fa-comment"></i></button>
                         </span>
                     </div>
                 </div>

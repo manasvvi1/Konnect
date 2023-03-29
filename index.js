@@ -1,5 +1,8 @@
-function toggleFollow(s){
-    var ele = document.getElementById(s);
+var likeSound = document.getElementById("likeAudio");
+var commentSound = document.getElementById("commentAudio");
+
+function toggleFollow(idName){
+    var ele = document.getElementById(idName);
     if(ele.classList.contains("following")){
         ele.classList.remove("following");
         ele.classList.add("follow");
@@ -13,6 +16,7 @@ function toggleFollow(s){
 }
 
 function toggleLike(idName){
+    likeSound.play();
     var ele = document.getElementById(idName);
     if(ele.classList.contains("color-red")){
         ele.classList.remove("color-red");
@@ -21,5 +25,12 @@ function toggleLike(idName){
     else{
         ele.classList.add("color-red");
         ele.innerHTML = "<i class=\"fa-solid fa-heart color-red\"></i>";
-    }   
+    }
+}
+
+function toggleComment(idName){
+    commentSound.play();
+    let comment = prompt("Add Comment:", "");
+    var ele = document.getElementById(idName);
+    ele.innerHTML = "<i class=\"fa-solid fa-comment color-blue\"></i>";
 }
