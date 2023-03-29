@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Konnect - Messages</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./messages.css" />
+  </head>
+  <body>
+    <!-- 
+        Navigation Menu
+    -->
+    <nav>
+      <div id="companyHeader">
+        <table>
+          <tr>
+            <td>
+              <img src="/logo.jpg" width="100" />
+            </td>
+            <td>
+              <h1>Konnect</h1>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <ul id="navigationMenu">
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-house"></i
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a
+          >
+        </li>
+        <li class="activeMenuItem">
+          <a href="messages.html"
+            ><i class="fa-solid fa-message"></i
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Messages</a
+          >
+        </li>
+        <li>
+          <a href="profile.html"
+            ><i class="fa-solid fa-user"></i
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</a
+          >
+        </li>
+        <li>
+          <a href="settings.html"
+            ><i class="fa-solid fa-gear"></i
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a
+          >
+        </li>
+      </ul>
+      <div id="accountDetails">
+        <hr />
+        <h3 id="accountHeading">Account</h3>
+        <hr />
+        <table>
+          <tr>
+            <td>
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQGfDxrdzCcy6Q/profile-displayphoto-shrink_800_800/0/1631616989429?e=2147483647&v=beta&t=inbf0-2PxE1MSVxHznkpPCM74QD3FZ4p0J3JuMG4HqA"
+                class="circular"
+                width="40"
+                height="40"
+              />
+            </td>
+            <td id="account-name">
+              <p style="font-size: 17px; font-weight: bold">Manasvvi</p>
+              @manasvvi_1241
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <a href="https://www.swiggy.com/"
+          ><img
+            src="https://newspaperads.ads2publish.com/wp-content/uploads/2017/10/swiggy-food-delivery-app-enjoy-flat-40-off-ad-pune-times-28-10-2017.jpg"
+            width="150"
+            id="advertisement"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- 
+        Messages Tab
+    -->
+    <messageView>
+      <ul id="navigationMenu">
+        <!-- TopTab -->
+        <div class="grid-container" style="background-color: #303841">
+          <div class="grid-item">Recent Messages</div>
+          <div class="grid-item"><i class="fa-solid fa-edit"></i></div>
+        </div>
+        <br />
+
+        <!-- Chats/Groups Tabs -->
+        <div class="grid-container" style="background-color: #303841; align-items: center">
+          <div class="grid-item" style="background-color: #3a4750">Chats</div>
+          <div class="grid-item" style="background-color: #3a4750">Groups</div>
+        </div>
+        <br />
+
+        <!-- Messages List -->
+        <li class="activeMessageItem">
+          <div class="grid-container">
+            <div class="grid-item">
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQGfDxrdzCcy6Q/profile-displayphoto-shrink_800_800/0/1631616989429?e=2147483647&v=beta&t=inbf0-2PxE1MSVxHznkpPCM74QD3FZ4p0J3JuMG4HqA"
+                class="circular"
+                width="40"
+                height="40"
+              />
+            </div>
+            <div class="grid-item">
+              <a href="#">Radhika Singh</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="grid-container">
+            <div class="grid-item">
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQGfDxrdzCcy6Q/profile-displayphoto-shrink_800_800/0/1631616989429?e=2147483647&v=beta&t=inbf0-2PxE1MSVxHznkpPCM74QD3FZ4p0J3JuMG4HqA"
+                class="circular"
+                width="40"
+                height="40"
+              />
+            </div>
+            <div class="grid-item">
+              <a href="#">Yuktika Duggal</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="grid-container">
+            <div class="grid-item">
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQGfDxrdzCcy6Q/profile-displayphoto-shrink_800_800/0/1631616989429?e=2147483647&v=beta&t=inbf0-2PxE1MSVxHznkpPCM74QD3FZ4p0J3JuMG4HqA"
+                class="circular"
+                width="40"
+                height="40"
+              />
+            </div>
+            <div class="grid-item">
+              <a href="#">Simran Arora</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </messageView>
+    <!-- 
+        Chat Window - TODO
+    -->
+    <chattingView> </chattingView>
+
+    <script
+      src="https://kit.fontawesome.com/a30f4e00c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

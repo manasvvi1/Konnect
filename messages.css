@@ -1,0 +1,39 @@
+messageView {
+  background-color: #3a4750;
+  width: 15%;
+  height: 100%;
+  align-items: start;
+  position: fixed;
+  margin-left: 15%;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+chattingView {
+  background-color: #2f3a47;
+  width: 70%;
+  height: 100%;
+  margin-left: 30%;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.activeMessageItem {
+  background-color: #303841;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  /* justify-content: space-between; */
+  grid-template-columns: auto auto auto;
+  padding: 2px;
+}
+.grid-item {
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+  align-items: center;
+  font-size: medium;
+}
