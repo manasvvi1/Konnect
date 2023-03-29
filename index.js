@@ -11,3 +11,15 @@ function toggleFollow(s){
         ele.innerHTML = "Followed";
     }
 }
+
+function toggleLike(idName){
+    var ele = document.getElementById(idName);
+    if(ele.classList.contains("color-red")){
+        ele.classList.remove("color-red");
+        ele.innerHTML = "<i class=\"fa-solid fa-heart color-white\"></i>";
+    }
+    else{
+        ele.classList.add("color-red");
+        ele.innerHTML = "<i class=\"fa-solid fa-heart color-red\"></i>";
+    }   
+}
