@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Konnect - Settings</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./messages.css" />
+    <style>
+      .example::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .example {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-auto">
+      <div class="grid grid-cols-1 md:grid-cols-6">
+        <div class="hidden lg:flex flex-col h-[100vh] bg-[#303841]">
+          <div class="w-full h-32">
+            <div class="flex h-32 items-center justify-center">
+              <img src="./logo.jpg" class="w-16 h-16 rounded-full" />
+              <h2 class="text-3xl ml-2 text-white">Konnect</h2>
+            </div>
+          </div>
+          <div>
+            <div class="flex h-12 items-center -mt-5">
+              <div class="flex w-full justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+                  />
+                  <path
+                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+                  />
+                </svg>
+              </div>
+              <div class="flex w-full -ml-10">
+                <a href="index.html" class="text-white text-xl"> Home </a>
+              </div>
+            </div>
+
+            <div class="flex h-10 mt-1 justify-evenly items-center">
+              <div class="flex w-full justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z"
+                  />
+                  <path
+                    d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 001.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0015.75 7.5z"
+                  />
+                </svg>
+              </div>
+              <div class="flex w-full -ml-10">
+                <a href="messages.html" class="text-white text-xl">
+                  Messages
+                </a>
+              </div>
+            </div>
+
+            <div class="flex h-12 mt-4 items-center">
+              <div class="flex w-full justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="flex w-full -ml-10">
+                <a href="profile.html" class="text-white text-xl"> Profile </a>
+              </div>
+            </div>
+
+            <div class="flex h-12 mt-4 items-center bg-[#3A4750]">
+              <div class="flex w-full justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  class="w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="flex w-full -ml-10">
+                <a href="settings.html" class="text-white text-xl">
+                  Settings
+                </a>
+              </div>
+            </div>
+
+            <div class="flex m-4 flex-col">
+              <div class="flex w-full h-[1.5px] bg-white"></div>
+              <h2 class="text-white text-xl m-2">Account</h2>
+              <div class="flex w-full h-[1.5px] bg-white"></div>
+            </div>
+
+            <div class="flex h-20 items-center">
+              <div class="flex w-40 justify-center">
+                <img
+                  src="https://media.licdn.com/dms/image/C5603AQGfDxrdzCcy6Q/profile-displayphoto-shrink_800_800/0/1631616989429?e=2147483647&v=beta&t=inbf0-2PxE1MSVxHznkpPCM74QD3FZ4p0J3JuMG4HqA"
+                  class="w-12 h-12 rounded-xl"
+                />
+              </div>
+              <div class="flex w-full flex-col">
+                <a href="#" class="text-white text-xl"> Manasvvi </a>
+                <a href="#" class="text-white text-sm"> @manasvvi_1241 </a>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center">
+              <!-- object-cover relative -->
+              <img
+                class="flex flex-wrap"
+                width="150"
+                src="https://newspaperads.ads2publish.com/wp-content/uploads/2017/10/swiggy-food-delivery-app-enjoy-flat-40-off-ad-pune-times-28-10-2017.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-6 lg:col-span-5">
+          <div class="grid grid-cols-1 md:grid-cols-3 h-[100vh] bg-[#3A4750]">
+            <div class="flex flex-col">
+              <div>
+                <!-- <div class="flex w-full h-[1px] bg-white mt-15"></div> -->
+                <!-- <div class="flex-1 w-[1px] h-full bg-white relative z-0"></div> -->
+
+                <div class="flex h-20 items-center bg-slate-800 p-10">
+                  <div class="flex w-40 justify-center"></div>
+                  <div class="flex w-full">
+                    <a href="#" class="text-white text-xl"> Edit Profile </a>
+                  </div>
+                </div>
+
+                <div class="flex h-20 items-center">
+                  <div class="flex w-40 justify-center"></div>
+                  <div class="flex w-full">
+                    <a href="#" class="text-white text-xl"> Change Password </a>
+                  </div>
+                </div>
+
+                <div class="flex h-20 items-center">
+                  <div class="flex w-40 justify-center"></div>
+                  <div class="flex w-full">
+                    <a href="#" class="text-white text-xl">
+                      Email Notification
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex h-20 items-center">
+                  <div class="flex w-40 justify-center"></div>
+                  <div class="flex w-full">
+                    <a href="#" class="text-white text-xl">
+                      Push Notification
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex h-20 items-center">
+                  <div class="flex w-40 justify-center"></div>
+                  <div class="flex w-full">
+                    <a href="#" class="text-white text-xl">
+                      Privacy and Security
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex h-20 items-center">
+                  <div class="flex w-40 justify-center"></div>
+                  <div class="flex w-full">
+                    <a href="#" class="text-white text-xl"> Login Activity </a>
+                  </div>
+                </div>
+
+                <div class="flex h-20 items-center">
+                  <div class="flex w-40 justify-center"></div>
+                  <div class="flex w-full">
+                    <a href="#" class="text-white text-xl"> Help </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Settings View -->
+            <div class="col-span-2 flex flex-col bg-slate-700 h-screen">
+              <div
+                id="message_view"
+                class="flex flex-1 bg-[#2F3A47] flex-col w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-col justify-center items-center">
+                  <div class="flex h-20 items-center mt-20">
+                    <div class="flex w-40 justify-center">
+                      <img
+                        src="https://media.licdn.com/dms/image/C5603AQGfDxrdzCcy6Q/profile-displayphoto-shrink_800_800/0/1631616989429?e=2147483647&v=beta&t=inbf0-2PxE1MSVxHznkpPCM74QD3FZ4p0J3JuMG4HqA"
+                        class="w-20 h-20 rounded-full"
+                      />
+                    </div>
+                    <div class="flex w-full flex-col">
+                      <a href="#" class="text-white text-xl"> manasvvi_1241 </a>
+                      <a href="#" class="text-blue-400 text-sm">
+                        change profile photo
+                      </a>
+                    </div>
+                  </div>
+
+                  <form class="mt-20">
+                    <div class="grid gap-6 mb-6 md:grid-cols-2">
+                      <div>
+                        <label
+                          for="first_name"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >First name</label
+                        >
+                        <input
+                          type="text"
+                          id="first_name"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="John"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="last_name"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Last name</label
+                        >
+                        <input
+                          type="text"
+                          id="last_name"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Doe"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="company"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Company</label
+                        >
+                        <input
+                          type="text"
+                          id="company"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Flowbite"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="phone"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Phone number</label
+                        >
+                        <input
+                          type="tel"
+                          id="phone"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="123-45-678"
+                          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="website"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Website URL</label
+                        >
+                        <input
+                          type="url"
+                          id="website"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="flowbite.com"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          for="visitors"
+                          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                          >Gender</label
+                        >
+                        <input
+                          type="text"
+                          id="visitors"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Female"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-6">
+                      <label
+                        for="email"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="john.doe@company.com"
+                        required
+                      />
+                    </div>
+                    <!-- <div class="mb-6">
+                      <label
+                        for="password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        id="password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="•••••••••"
+                        required
+                      />
+                    </div>
+                    <div class="mb-6">
+                      <label
+                        for="confirm_password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                        >Confirm password</label
+                      >
+                      <input
+                        type="password"
+                        id="confirm_password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="•••••••••"
+                        required
+                      />
+                    </div> -->
+                    <div class="flex items-start mb-6">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="remember"
+                          type="checkbox"
+                          value=""
+                          class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                          hidden
+                        />
+                      </div>
+                      <label
+                        for="remember"
+                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >
+                        <a
+                          href="#"
+                          class="text-blue-600 hover:underline dark:text-blue-500"
+                          >Temporarily deactivate my account</a
+                        >.</label
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
